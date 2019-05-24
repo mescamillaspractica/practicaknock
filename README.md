@@ -18,7 +18,7 @@
 		}
 }
 
-#to authenticate, make a POST with this stuff
+# to authenticate, make a POST with this stuff
 
 {
 	"auth":{
