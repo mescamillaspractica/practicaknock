@@ -1,24 +1,28 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
+    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
+    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
+    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
+     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+    ----------------------------------------------------------------- 
 
-Things you may want to cover:
 
-* Ruby version
+# to create user, make a POST with this stuff
 
-* System dependencies
+{
+	"user":
+		{"name": "pepito",
+		"email": "pepito@gmail.com",
+		"password": "12345678",
+		"password_confirmation": "12345678"
+		}
+}
 
-* Configuration
+#to authenticate, make a POST with this stuff
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+{
+	"auth":{
+		"email": "juanito@gmail.com",
+		"password": "12345678"
+	}
+}
